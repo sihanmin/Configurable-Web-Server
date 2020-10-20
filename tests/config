@@ -1,0 +1,49 @@
+port 8080;
+
+location "/static" StaticHandler {
+	root "../static";
+}
+
+location "/static2" StaticHandler {
+	root "../static2";
+}
+
+location "/static/static2" StaticHandler {
+	root "../static2";
+}
+
+location "/static/static2/static" StaticHandler {
+	root "../static";
+}
+
+location "/dino" StaticHandler {
+	root "../t_rex";
+}
+
+location "/game" GameHandler {
+	root "../t_rex/game";
+}
+
+
+location "/echo" EchoHandler {
+}
+
+location "/echo2" EchoHandler {
+}
+
+location "/static/echo" EchoHandler {
+}
+
+location "/status" StatusHandler {
+}
+
+location "/ucla" ProxyHandler {
+	dest "www.ucla.edu";
+}
+
+location "/berkeley" ProxyHandler {
+	dest "www.berkeley.edu";
+}
+
+location "/health" HealthHandler {
+}

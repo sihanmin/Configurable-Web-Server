@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Customize Your T-Rex Runner!</title>
+  <meta name="description" content="Customize the T-Rex Runner game">
+  <meta name="author" content="aptx">
+  <link rel="stylesheet" href="/dino/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <div class="outline">
+    <div id="container">
+      <div class="segment">
+        <button id="default" onclick="location.href='/game/default'">Go Default</button>
+      </div>
+
+      <div id="picks">
+        <div>
+          <span>Go for one of our picks</span>
+        </div>
+        <div>
+          <img id="choice_1" src="/dino/game/assets/customize/Choice1.png"
+            onclick="location.href='/game/customize/NoChoice1'">
+          <img id="choice_2" src="/dino/game/assets/customize/Choice2.png"
+            onclick="location.href='/game/customize/NoChoice2'">
+        </div>
+
+      </div>
+
+      <!-- <label for="background">Choose a image for background:</label>
+  <input type="file" id="background" name="background"> -->
+      <div id="select">
+        <div>
+          <label for="runner">Choose a image for runner:</label>
+        </div>
+        <div>
+          <input type="file" id="runner" name="runner">
+        </div>
+      </div>
+
+      <div class="segment">
+
+        <button id="submit">Upload</button>
+        <span id="state"></span>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="/dino/index.js"></script>
+
+</html>

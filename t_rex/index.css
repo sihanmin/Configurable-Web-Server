@@ -1,0 +1,57 @@
+#choice_1 {
+  width: 40px;
+  height: 40px;
+}
+
+#choice_2 {
+  width: 40px;
+  height: 40px;
+}
+
+#container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+#picks {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+
+#select {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+
+.segment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.outline {
+  margin: 30px;
+  background-color: white;
+}
+
+button {
+  width: 300px;
+  height: 70px;
+  font-size: 30px;
+  background-color: #d0e2f4;
+}
+
+body {
+  font-size: 25px;
+  background-color: #d0e2f4;
+}
